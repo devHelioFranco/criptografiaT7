@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cifra.css">
+    <title>Cifra de Cesar</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="main-container" id="container">
+
+            <fieldset class="fieldset">
+                <select id="selection">
+                    <optgroup>
+                    <option value disabled selected>Escolha a Criptografia</option>
+                    <option value="base64">Base 64</option>
+                    <option value="caesar">Cifra de Cesar</option>
+                    </optgroup>
+                </select>
+
+                <div id="divCesar">
+                    <h3>Escolha a chave!</h3>
+                    <input type="number" id="chave" placeholder="Digite o numero da chave" value="0">
+                    <h3>Codificar ou Descodificar?</h3>
+                    <div class="inputradios">
+                        <label for='escolhaCesar'>Criptografar</label>
+                        <input type="radio" id="cesarCod" value='cesarCod' name="escolha" checked>
+                        <label for='escolhaCesar2'>Descriptografar</label>
+                        <input type="radio" id='decodCesar' value='decodCesar' name="escolha">
+                        </div>    
+
+                        
+                        <textarea id="textinput" label="Digite o texto "></textarea>
+                        <h3>Resultado</h3>
+                        <textarea id="textoutput" readonly></textarea>
+                </div>
+
+
+                
+
+                <div id="divB64">
+
+                    <h3>Codificar ou Descodificar?</h3>
+                    <div class="inputradios">
+                        <label for='escolhaBase64'>Criptografar</label>
+                        <input type="radio" id="b64Cod" value='b64Cod' name="escolhab" checked>
+                        <label for='escolhaBase642'>Descriptografar</label>
+                        <input type="radio" id="b64Decod" value='b64Decod' name="escolhab">
+                    </div>
+                    
+                    <h3>Escreva aqui a mensagem que deseja criptografar/descriptografar:</h3>
+                    <textarea id="textinput2"></textarea>
+                    <h3>Resultado:</h3>
+                    <textarea id="textoutput2" readonly></textarea>
+                </div>
+             </fieldset>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./cifra.js"></script>
+</body>
+</html>
